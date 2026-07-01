@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faith &amp; Fitness Enterprises — Koala Tea Kratom</title>
+  <meta name="description" content="Faith & Fitness Enterprises, Inc. — quality botanicals and Koala Tea Kratom, based in New Bern, North Carolina." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1c2321;
+      --muted: #5a6560;
+      --leaf: #2f6b4f;
+      --leaf-dark: #24543e;
+      --sand: #f6f4ee;
+      --line: #e4e0d6;
+      --gold: #c9a24b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--sand);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; font-weight: 600; }
+
+    /* Header */
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem clamp(1.25rem, 5vw, 4rem);
+      max-width: 1120px; margin: 0 auto;
+    }
+    .brand { display: flex; align-items: center; gap: .65rem; font-family: "Fraunces", serif; font-weight: 600; font-size: 1.15rem; color: var(--leaf-dark); }
+    .brand .mark {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--leaf); color: #fff;
+      display: grid; place-items: center; font-size: 1rem; font-weight: 600;
+    }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 1.5rem; font-size: .95rem; font-weight: 500; transition: color .2s; }
+    nav a:hover { color: var(--leaf); }
+    @media (max-width: 640px) { nav { display: none; } }
+
+    /* Hero */
+    .hero {
+      max-width: 1120px; margin: 0 auto;
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem) clamp(3.5rem, 8vw, 6rem);
+      text-align: center;
+    }
+    .eyebrow {
+      display: inline-block; letter-spacing: .18em; text-transform: uppercase;
+      font-size: .78rem; font-weight: 600; color: var(--gold); margin-bottom: 1.25rem;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); color: var(--ink); max-width: 16ch; margin: 0 auto 1.25rem; }
+    .hero p.lead { font-size: clamp(1.05rem, 2.5vw, 1.3rem); color: var(--muted); max-width: 55ch; margin: 0 auto 2.25rem; }
+    .cta-row { display: flex; gap: .85rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: .85rem 1.7rem; border-radius: 999px;
+      font-weight: 600; font-size: .98rem; text-decoration: none; transition: transform .15s, box-shadow .2s, background .2s;
+    }
+    .btn-primary { background: var(--leaf); color: #fff; box-shadow: 0 6px 18px rgba(47,107,79,.25); }
+    .btn-primary:hover { background: var(--leaf-dark); transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: var(--leaf-dark); border: 1.5px solid var(--line); }
+    .btn-ghost:hover { border-color: var(--leaf); transform: translateY(-2px); }
+
+    /* Values */
+    .values { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .values-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 4rem);
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem;
+    }
+    .value h3 { font-size: 1.3rem; color: var(--leaf-dark); margin-bottom: .6rem; }
+    .value .icon { font-size: 1.6rem; margin-bottom: .75rem; display: block; }
+    .value p { color: var(--muted); font-size: .98rem; }
+
+    /* About */
+    .about { max-width: 760px; margin: 0 auto; padding: clamp(3.5rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem); text-align: center; }
+    .about h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.25rem; }
+    .about p { color: var(--muted); font-size: 1.08rem; margin-bottom: 1.1rem; }
+    .about .note { font-size: .9rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; opacity: .85; }
+
+    /* Contact */
+    .contact { background: var(--leaf-dark); color: #fff; }
+    .contact-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 4rem);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;
+    }
+    @media (max-width: 720px) { .contact-inner { grid-template-columns: 1fr; text-align: center; } }
+    .contact h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin-bottom: .75rem; }
+    .contact p.sub { color: rgba(255,255,255,.75); max-width: 40ch; }
+    .card {
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px; padding: 2rem;
+    }
+    .card .name { font-family: "Fraunces", serif; font-size: 1.25rem; font-weight: 600; margin-bottom: .25rem; }
+    .card .org { color: rgba(255,255,255,.7); font-size: .95rem; margin-bottom: 1.25rem; }
+    .card a { color: #fff; text-decoration: none; font-weight: 500; }
+    .card .line { display: flex; gap: .6rem; align-items: baseline; margin-bottom: .6rem; font-size: .98rem; }
+    .card .label { color: var(--gold); font-weight: 600; min-width: 62px; }
+    .card .sites { margin-top: 1.1rem; padding-top: 1.1rem; border-top: 1px solid rgba(255,255,255,.15); font-size: .95rem; }
+    .card .sites a { color: rgba(255,255,255,.9); display: inline-block; margin-right: 1rem; }
+    .card .sites a:hover { color: var(--gold); }
+
+    footer { text-align: center; padding: 2rem 1.25rem; color: var(--muted); font-size: .85rem; background: var(--sand); }
+    footer a { color: var(--leaf); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="mark">🐨</span> Faith &amp; Fitness</div>
+    <nav>
+      <a href="#values">Our Standard</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Faith &amp; Fitness Enterprises, Inc.</span>
+    <h1>Quality botanicals, done right.</h1>
+    <p class="lead">
+      Home of Koala Tea Kratom — a New Bern, North Carolina company built on
+      transparency, careful sourcing, and doing business the honest way.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="https://koalateakratom.com" target="_blank" rel="noopener">Visit Koala Tea Kratom</a>
+    </div>
+  </section>
+
+  <section class="values" id="values">
+    <div class="values-inner">
+      <div class="value">
+        <span class="icon">🌿</span>
+        <h3>Carefully Sourced</h3>
+        <p>We care where our botanicals come from and how they're handled — quality starts long before it reaches you.</p>
+      </div>
+      <div class="value">
+        <span class="icon">🔬</span>
+        <h3>Tested &amp; Transparent</h3>
+        <p>We believe you deserve to know exactly what you're getting. Straight answers, clear labeling, no hype.</p>
+      </div>
+      <div class="value">
+        <span class="icon">🤝</span>
+        <h3>Honest Business</h3>
+        <p>Faith and fitness aren't just our name — they're how we treat customers, partners, and our community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About us</h2>
+    <p>
+      Faith &amp; Fitness Enterprises, Inc. is a family-run North Carolina business
+      operating Koala Tea Kratom. We focus on quality, responsible sourcing, and
+      clear, honest communication with the people we serve.
+    </p>
+    <p>
+      Whether you're a customer, a retail partner, or reaching out about policy and
+      advocacy, we'd genuinely like to hear from you.
+    </p>
+    <p class="note">
+      These statements have not been evaluated by the Food and Drug Administration.
+      Our products are not intended to diagnose, treat, cure, or prevent any disease.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div>
+        <h2>Let's talk.</h2>
+        <p class="sub">David prefers texting — the fastest way to reach us is a quick message.</p>
+      </div>
+      <div class="card">
+        <div class="name">David Hahn</div>
+        <div class="org">Faith &amp; Fitness Enterprises, Inc. — Koala Tea Kratom</div>
+        <div class="line"><span class="label">Text</span><a href="sms:+12522539629">(252) 253-9629</a></div>
+        <div class="line"><span class="label">Email</span><a href="mailto:dhahn402@gmail.com">dhahn402@gmail.com</a></div>
+        <div class="line"><span class="label">Based in</span><span>New Bern, North Carolina</span></div>
+        <div class="sites">
+          <a href="https://faithandfitnessherbs.com" target="_blank" rel="noopener">faithandfitnessherbs.com</a>
+          <a href="https://koalateakratom.com" target="_blank" rel="noopener">koalateakratom.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="yr">2026</span> Faith &amp; Fitness Enterprises, Inc. · New Bern, NC ·
+    <a href="#">Back to top ↑</a>
+  </footer>
+</body>
+</html>

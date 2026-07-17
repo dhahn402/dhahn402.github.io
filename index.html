@@ -109,12 +109,26 @@
 
     footer { text-align: center; padding: 2rem 1.25rem; color: var(--muted); font-size: .85rem; background: var(--sand); }
     footer a { color: var(--leaf); text-decoration: none; }
+
+    /* Family of companies */
+    .family { max-width: 1120px; margin: 0 auto; padding: clamp(3rem,7vw,5rem) clamp(1.25rem,5vw,4rem); }
+    .family .fhead { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
+    .family .fhead h2 { font-size: clamp(1.8rem,4vw,2.6rem); color: var(--ink); margin: .6rem 0; }
+    .family .fhead p { color: var(--muted); }
+    .fgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(258px,1fr)); gap: 1.1rem; }
+    .vcard { display: block; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.4rem 1.5rem; text-decoration: none; color: var(--ink); transition: transform .15s, box-shadow .2s, border-color .2s; box-shadow: 0 10px 28px -22px rgba(28,35,33,.4); }
+    .vcard:hover { transform: translateY(-3px); border-color: var(--leaf); box-shadow: 0 16px 34px -20px rgba(47,107,79,.35); }
+    .vtag { display: inline-block; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: .5rem; }
+    .vcard h3 { font-size: 1.18rem; color: var(--leaf-dark); margin-bottom: .35rem; }
+    .vcard p { color: var(--muted); font-size: .93rem; margin-bottom: .7rem; }
+    .vgo { color: var(--leaf); font-weight: 600; font-size: .9rem; }
   </style>
 </head>
 <body>
   <header>
     <div class="brand"><span class="mark">🐨</span> Faith &amp; Fitness</div>
     <nav>
+      <a href="#companies">Companies</a>
       <a href="#values">Our Standard</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -131,6 +145,25 @@
     <div class="cta-row">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
       <a class="btn btn-ghost" href="https://koalateakratom.com" target="_blank" rel="noopener">Visit Koala Tea Kratom</a>
+    </div>
+  </section>
+
+  <section class="family" id="companies">
+    <div class="fhead">
+      <span class="eyebrow">One Family. Many Ventures. One Mission.</span>
+      <h2>Our family of companies</h2>
+      <p>Honest businesses across Eastern North Carolina &mdash; each built to serve, and to give back.</p>
+    </div>
+    <div class="fgrid">
+      <a class="vcard" href="https://koalateakratom.com" target="_blank" rel="noopener"><span class="vtag">Botanical Wellness</span><h3>Koala Tea Kratom</h3><p>Premium, lab-tested kratom, kava &amp; botanicals — retail and wholesale supply.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://hahntechcorp.com" target="_blank" rel="noopener"><span class="vtag">Business &amp; Tech</span><h3>Hahn Technologies Corp</h3><p>Bookkeeping, tax, credit, POS, web &amp; AI — the parent company behind it all.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://flipthecupfinancials.com" target="_blank" rel="noopener"><span class="vtag">Credit &amp; Money</span><h3>Flip the Cup Financials</h3><p>Real credit coaching — from a 350 score to 800+. Honest help, no judgment.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://hahntechcorp.com/ready-tech-repairs/" target="_blank" rel="noopener"><span class="vtag">Device Repair</span><h3>Ready Tech Repairs</h3><p>Fast, honest phone &amp; computer repair — with your data treated like our own.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://hahntechcorp.com/gold/" target="_blank" rel="noopener"><span class="vtag">Precious Metals</span><h3>Gold, Silver &amp; Coins</h3><p>Fair, honest cash for gold, silver, junk silver, coins &amp; diamonds. Live prices.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://fishingpierhopper.com" target="_blank" rel="noopener"><span class="vtag">Crystal Coast</span><h3>Surf, Sea &amp; Sky</h3><p>A free live beach-day planner — surf, tides, weather &amp; rip-current safety.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://dhahn402.github.io/faith-fitness-mobile-iv/" target="_blank" rel="noopener"><span class="vtag">Hydration &amp; Wellness</span><h3>Living Water Delivered</h3><p>Mobile IV hydration &amp; soaking, delivered to your door in Eastern NC.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://everandamen.org" target="_blank" rel="noopener"><span class="vtag">Weddings</span><h3>Ever &amp; Amen</h3><p>Custom wedding websites, film, officiant, catering &amp; full planning.</p><span class="vgo">Visit &rarr;</span></a>
+      <a class="vcard" href="https://donutsphobagels.com" target="_blank" rel="noopener"><span class="vtag">Food &middot; New Bern</span><h3>Donuts Pho Bagels</h3><p>Fresh donuts, Vietnamese ph&#7903; &amp; coffee, hand-rolled bagels &amp; deli.</p><span class="vgo">Visit &rarr;</span></a>
     </div>
   </section>
 

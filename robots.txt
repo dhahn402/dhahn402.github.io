@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# GitHub Pages only honors robots.txt at the domain root, so every
+# dhahn402.github.io project site registers its sitemap here.
 Sitemap: https://dhahn402.github.io/sitemap.xml
+Sitemap: https://dhahn402.github.io/hahn-realestate/sitemap.xml
+Sitemap: https://dhahn402.github.io/hahn-staffing/sitemap.xml
